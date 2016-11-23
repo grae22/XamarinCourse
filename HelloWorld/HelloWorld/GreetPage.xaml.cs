@@ -13,6 +13,14 @@ namespace HelloWorld
     public GreetPage()
     {
       InitializeComponent();
+
+      slider.Value = 0.5;
+    }
+
+    public void Slider_ValueChanged( object sender,
+                                     Xamarin.Forms.ValueChangedEventArgs args )
+    {
+      label.Text = string.Format( "Value is {0:F2}", args.NewValue );
     }
   }
 }
