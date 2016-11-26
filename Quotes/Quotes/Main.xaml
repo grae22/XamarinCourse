@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quotes.Main"
+             Padding="10, 0, 10, 0">
+  <StackLayout
+    HorizontalOptions="Fill"
+    VerticalOptions="Start"
+    BindingContext="{x:Reference uiSlider}">
+    
+    <Button Text="Next" Clicked="OnNextClicked" />
+    <Label Text="{Binding Value, StringFormat='Font size: {0:F0}'}" />
+    <Slider
+      x:Name="uiSlider"
+      Value="16"
+      Maximum="50"
+      Minimum="16"  />
+    <Label
+      x:Name="uiQuote"
+      Text="Quote..."
+      FontSize="{Binding Value}"/>
+  </StackLayout>
+</ContentPage>
