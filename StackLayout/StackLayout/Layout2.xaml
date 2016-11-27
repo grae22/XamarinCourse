@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.Layout2">
+  <StackLayout
+      Spacing="10"
+      Padding="0, 0, 0, 0">
+    <StackLayout Padding="8">
+      <Label
+          Text="nyc_photographer"
+          FontSize="18"
+          FontAttributes="Bold"/>
+    </StackLayout>
+    <Image Source="http://lorempixel.com/1920/1080/nature/3/" />
+    <StackLayout Padding="8">
+      <StackLayout
+          HorizontalOptions="Fill"
+          VerticalOptions="Start"
+          Orientation="Horizontal"
+          Padding="0, 0, 0, 20">
+        <Button Text="Like" />
+        <Button Text="Comment" />
+        <Button Text="Share" />
+      </StackLayout>
+      <BoxView
+          Color="#f0f0f0"
+          HeightRequest="1" />
+      <Label
+          Text="700 likes"
+          FontAttributes="Bold"
+          FontSize="18" />
+      <Label
+          Text="Blah blah blah..."
+          FontSize="18" />
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

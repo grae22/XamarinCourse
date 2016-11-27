@@ -11,7 +11,8 @@ namespace StackLayout
   {
     public App()
     {
-      MainPage = new Layout1();
+      //MainPage = new Layout1();
+      MainPage = new Layout2();
     }
 
     protected override void OnStart()

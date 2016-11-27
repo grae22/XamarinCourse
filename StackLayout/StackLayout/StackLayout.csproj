@@ -39,6 +39,9 @@
     <Compile Include="Layout1.xaml.cs">
       <DependentUpon>Layout1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Layout2.xaml.cs">
+      <DependentUpon>Layout2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +63,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Layout1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Layout2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
