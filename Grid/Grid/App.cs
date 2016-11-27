@@ -6,7 +6,8 @@ namespace Grid
   {
     public App()
     {
-      MainPage = new Dialler();
+      //MainPage = new Dialler();
+      MainPage = new Welcome();
     }
 
     protected override void OnStart()
