@@ -6,7 +6,8 @@ namespace Absolute
   {
     public App()
     {
-      MainPage = new Absolute1();
+      //MainPage = new Absolute1();
+      MainPage = new Relax();
     }
 
     protected override void OnStart()
