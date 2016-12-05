@@ -16,24 +16,28 @@
           BackgroundColor="Black"
           FontSize="48"
           HorizontalOptions="FillAndExpand"
-          VerticalOptions="Center" />
+          VerticalOptions="Center"
+          Clicked="ShowPreviousImage" />
       <ActivityIndicator
           Color="White"
           HorizontalOptions="FillAndExpand"
           VerticalOptions="Center"
-          IsRunning="True" />
+          IsRunning="{Binding
+              Source={x:Reference uiImage},
+              Path=IsLoading}" />
       <Button
           Text="&gt;"
           TextColor="White"
           BackgroundColor="Black"
           FontSize="48"
           HorizontalOptions="FillAndExpand"
-          VerticalOptions="Center" />
+          VerticalOptions="Center"
+          Clicked="ShowNextImage" />
     </StackLayout>
     <Image
+        x:Name="uiImage"
         AbsoluteLayout.LayoutBounds="0.5, 0.5, 1, 0.85"
         AbsoluteLayout.LayoutFlags="All"
-        Aspect="AspectFit"
-        Source="http://lorempixel.com/1920/1080/city/1" />
+        Aspect="AspectFit" />
   </AbsoluteLayout>
 </ContentPage>
